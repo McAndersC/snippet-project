@@ -1,0 +1,100 @@
+:root {
+
+    --color-base : beige;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: var(--color-base);
+    margin: 0;
+    padding: 0;
+
+}
+
+.page {
+
+   
+    background-color: blue;
+    text-align: center;
+    margin: auto auto;
+
+}
+
+.page-content {
+
+    width: 100%;
+    background-color: green;
+    margin: auto auto;
+
+}
+
+.section {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    margin : 0;
+}
+.menu {
+    display: none;
+}
+
+.menu-pane {
+    background-color: red;
+    position: absolute;
+    top: -500px;
+    width: 100%;
+    transition: top 0.5s ease-out;
+}
+.menubar {
+    height: 100px;
+}
+.menubar.active .menu-pane {
+    top: 100px;
+}
+
+.menu-pane a{
+
+    display: block;
+}
+@media screen and (min-width: 1280px) {
+
+    .menu {
+        display: block;
+    }
+
+    .menu-pane {
+        display: none;
+
+    }
+
+    .page-content {
+
+        width: 1140px;
+        background-color: yellow;
+        text-align: left;
+
+    }
+    body {
+
+        background-color: red;
+    
+    } 
+
+    .section {
+        background-color: orange;
+        flex-direction: row;
+    }
+
+}
+
